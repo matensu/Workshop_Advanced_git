@@ -65,8 +65,6 @@ jobs:                      # Set of jobs (run in parallel by default)
 
 ## Exercise 02.1 — First Workflow: Hello Actions
 
-**Estimated time: 20 min**
-
 ### Instructions
 
 1. In **your fork** of the workshop, create the `.github/workflows/` folder.
@@ -92,8 +90,6 @@ jobs:                      # Set of jobs (run in parallel by default)
 
 ## Exercise 02.2 — Triggers in Detail
 
-**Estimated time: 25 min**
-
 ### Instructions
 
 Create a `triggers-demo.yml` file with **4 jobs**, each triggered by a different trigger:
@@ -116,8 +112,6 @@ Research what `on: workflow_call` is and how it differs from `workflow_dispatch`
 ---
 
 ## Exercise 02.3 — Complete CI Pipeline (Node.js)
-
-**Estimated time: 45 min**
 
 This is the heart of this module. You'll build a real CI pipeline.
 
@@ -179,8 +173,6 @@ Run tests on **multiple Node versions** in parallel:
 
 ## Exercise 02.4 — Secrets & Environment Variables
 
-**Estimated time: 20 min**
-
 ### Context
 
 Never put secrets (tokens, passwords, API keys) in code or workflows in plain text. GitHub Actions has an encrypted secrets system.
@@ -209,8 +201,6 @@ Research what **GitHub Environments** are (not environment variables). How do th
 ---
 
 ## Exercise 02.5 — Essential Marketplace Actions
-
-**Estimated time: 35 min**
 
 Here are the most used actions. For each one, **create a demo workflow** and test it.
 
@@ -248,8 +238,6 @@ Search and implement **one** of these actions:
 
 ## Exercise 02.6 — Automated PR Workflow
 
-**Estimated time: 30 min**
-
 ### Instructions
 
 Create a `pr-checks.yml` workflow that triggers on `pull_request` and:
@@ -271,8 +259,6 @@ Create a `pr-checks.yml` workflow that triggers on `pull_request` and:
 ---
 
 ## Exercise 02.7 — Create Your Own Composite Action
-
-**Estimated time: 35 min**
 
 A composite action groups multiple steps into a reusable action, like a function.
 
@@ -326,8 +312,6 @@ Research the difference between a **composite action** and a **JavaScript action
 
 ## Exercise 02.8 — Deployment with Environments and Gates
 
-**Estimated time: 30 min**
-
 ### Scenario
 
 You want a deployment pipeline that:
@@ -376,8 +360,6 @@ You want a deployment pipeline that:
 
 ## Exercise 02.9 — Optimization and Best Practices
 
-**Estimated time: 20 min (research)**
-
 ### Instructions
 
 Research and explain (with examples if possible) the following best practices:
@@ -391,19 +373,6 @@ Research and explain (with examples if possible) the following best practices:
 4. **Conditional steps**: How do you run a step only if a condition is true? (search for `if:` and `${{ }}` expressions)
 
 5. **`continue-on-error`**: When would you want a job to continue even if a step fails?
-
----
-
-## End-of-Module Checklist
-
-- [ ] You've created a CI pipeline with lint, tests, and build
-- [ ] You've used a matrix to test multiple environments
-- [ ] You've configured npm/pip caching
-- [ ] You know how to use and create secrets
-- [ ] You've created a reusable composite action
-- [ ] You've set up a deployment workflow with approval gate
-- [ ] You understand the difference between `run` and `uses`
-- [ ] You know how to read logs from a failed workflow
 
 ---
 

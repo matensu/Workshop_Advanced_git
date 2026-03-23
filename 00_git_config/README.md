@@ -33,8 +33,6 @@ git config --list --show-origin
 
 ## Exercise 00.1 — Explore Your Current Configuration
 
-**Estimated time: 15 min**
-
 Before making any changes, understand what's already there.
 
 ### Instructions
@@ -55,8 +53,6 @@ Before making any changes, understand what's already there.
 ---
 
 ## Exercise 00.2 — Configure Your Environment
-
-**Estimated time: 20 min**
 
 ### Instructions
 
@@ -101,8 +97,6 @@ At the end, your `~/.gitconfig` should look like (at minimum):
 ---
 
 ## Exercise 00.3 — Aliases: Build Your Toolkit
-
-**Estimated time: 30 min**
 
 Git aliases are defined in the `[alias]` section of `.gitconfig`. They can call Git commands or shell scripts (with the `!` prefix).
 
@@ -168,8 +162,6 @@ Research what a **global `.gitignore`** (`core.excludesFile`) is and configure i
 ---
 
 ## Exercise 00.4 — Git Hooks (Client-Side)
-
-**Estimated time: 25 min**
 
 Hooks are scripts executed automatically by Git at certain points in the workflow. They're located in `.git/hooks/` of each repository.
 
@@ -238,8 +230,6 @@ git commit -m "feat: correct message"  # should pass
 ---
 
 ## Exercise 00.5 — `.gitattributes`
-
-**Estimated time: 15 min**
 
 The `.gitattributes` file (at repo root, versioned) lets you define behaviors for specific file types.
 
