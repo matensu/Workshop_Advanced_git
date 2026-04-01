@@ -16,9 +16,4 @@ jobs:                      # Set of jobs (run in parallel by default)
 
       - name: Print branch name
         run: |
-          echo "Current branch: ${GITHUB_REF##*/}"
-
-      - name: Show GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
+          echo "Current branch: ${{ github.sha }}"
