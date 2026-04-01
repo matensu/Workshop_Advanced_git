@@ -12,8 +12,7 @@ jobs:                      # Set of jobs (run in parallel by default)
     runs-on: ubuntu-latest
 
     steps:
-      - run: gh pr comment "$PR_URL" --body "Hello, GitHub Actions!"
-
+      - run: echo "Hello, GitHub Actions!"
       - name: Print branch name
         run: |
           echo "Current branch: ${{ github.sha }}"
