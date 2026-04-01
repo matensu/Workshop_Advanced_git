@@ -1,0 +1,24 @@
+# .github/workflows/ci.yml
+name: CI Pipeline          # Name displayed on GitHub
+
+on:                        # Triggers — when this workflow starts
+  push:
+    branches: [${{ github.event.repository.default_branch }}]
+  pull_request:
+    branches: [main]
+
+jobs:                      # Set of jobs (run in parallel by default)
+  test:                    # Job name
+    runs-on: popos-latest
+
+    steps:
+      - run: gh pr comment "$PR_URL" --body "Hello, GitHub Actions!"
+
+      - name: Print branch name
+        run: |
+          echo "Current branch: ${GITHUB_REF##*/}"
+
+      - name: Show GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
