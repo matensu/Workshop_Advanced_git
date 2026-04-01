@@ -9,7 +9,7 @@ on:                        # Triggers — when this workflow starts
 
 jobs:                      # Set of jobs (run in parallel by default)
   test:                    # Job name
-    runs-on: popos-latest
+    runs-on: ubuntu-latest
 
     steps:
       - run: gh pr comment "$PR_URL" --body "Hello, GitHub Actions!"
